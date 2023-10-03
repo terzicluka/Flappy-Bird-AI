@@ -15,6 +15,7 @@
 		B76A23D92ABCB14200E06B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76A23D72ABCB14200E06B91 /* Main.storyboard */; };
 		B76A23DB2ABCB14300E06B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76A23DA2ABCB14300E06B91 /* Assets.xcassets */; };
 		B76A23DE2ABCB14300E06B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76A23DC2ABCB14300E06B91 /* LaunchScreen.storyboard */; };
+		B7E8B0C12ACC75EF0005948F /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8B0C02ACC75EF0005948F /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B76A23D82ABCB14200E06B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B76A23DA2ABCB14300E06B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76A23DD2ABCB14300E06B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7E8B0C02ACC75EF0005948F /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		B76A23CC2ABCB14200E06B91 /* Flappy Bird AI */ = {
 			isa = PBXGroup;
 			children = (
+				B7E8B0BD2ACC754D0005948F /* Common */,
 				B76A23CD2ABCB14200E06B91 /* AppDelegate.swift */,
 				B76A23CF2ABCB14200E06B91 /* GameScene.sks */,
 				B76A23D12ABCB14200E06B91 /* Actions.sks */,
@@ -69,6 +72,30 @@
 				B76A23DC2ABCB14300E06B91 /* LaunchScreen.storyboard */,
 			);
 			path = "Flappy Bird AI";
+			sourceTree = "<group>";
+		};
+		B7E8B0BD2ACC754D0005948F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8B0BE2ACC75570005948F /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B7E8B0BE2ACC75570005948F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8B0BF2ACC75620005948F /* Assets */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7E8B0BF2ACC75620005948F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8B0C02ACC75EF0005948F /* UIImage+Extensions.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 				B76A23D42ABCB14200E06B91 /* GameScene.swift in Sources */,
 				B76A23D62ABCB14200E06B91 /* GameViewController.swift in Sources */,
 				B76A23CE2ABCB14200E06B91 /* AppDelegate.swift in Sources */,
+				B7E8B0C12ACC75EF0005948F /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
