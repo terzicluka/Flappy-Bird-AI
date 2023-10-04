@@ -1,18 +1,12 @@
 import pygame
 import os
-
 import bird as bird_module
 import position
-
-# Constants
 
 WINDOW_WIDTH = 500
 WINDOW_HEIGHT = 800
 BIRD_START_POSITION = position.Position(200, 200)
 
-PIPE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images", "pipe.png")))
-
-BASE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images", "base.png")))
 BACKGROUND_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images", "background.png")))
 
 def draw_background(window, bird):

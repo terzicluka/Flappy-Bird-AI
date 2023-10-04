@@ -36,6 +36,7 @@ class Bird:
         new_rectangle = rotated_image.get_rect(center=self.current_image.get_rect(topleft=(self.position.x, self.position.y)).center)
         window.blit(rotated_image, new_rectangle.topleft)
 
+    # Needs calculation of mask for the bird since there are transparent pixels
     def get_mask(self):
         return pygame.mask.from_surface(self.current_image)
     
