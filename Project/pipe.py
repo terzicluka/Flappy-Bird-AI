@@ -17,8 +17,10 @@ class Pipe:
         
         self.passed = False
         
-        self.calculate_height()
-        self.calculate_position()
+        self.height = random.randrange(50, 450)
+        
+        self.top = self.height - self.pipe_top.get_height()
+        self.bottom = self.height + self.SPACE_BETWEEN_PIPES
         
     def move(self):
         self.x -= self.VELOCITY
@@ -40,10 +42,3 @@ class Pipe:
         top_point = bird_mask.overlap(top_mask, top_offset)
         
         return top_point or bottom_point
-        
-    def __calculate_height(self):
-        self.height = random.randrange(50, 450)
-    
-    def __calculate_position(self):
-        self.top = self.height - self.pipe_top.get_height()
-        self.bottom = self.height + self.SPACE_BETWEEN_PIPES

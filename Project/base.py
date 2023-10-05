@@ -1,7 +1,7 @@
 import pygame
 import os
 
-class Pipe:
+class Base:
     BASE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images", "base.png")))
     
     VELOCITY = 5
