@@ -3,6 +3,7 @@ import os
 import bird as bird_module
 import pipe as pipe_module
 import base as base_module
+import difficulty_constants
 import position
 pygame.font.init()
 
@@ -10,8 +11,6 @@ WINDOW_WIDTH = 500
 WINDOW_HEIGHT = 800
 BIRD_START_POSITION = position.Position(230, 350)
 BASE_HEIGHT = 730
-PIPE_DISTANCE = 600
-TICKS_PER_SECOND = 30
 
 SCORE_FONT = pygame.font.SysFont("comicsans", 50)
 
@@ -37,7 +36,7 @@ def main():
     
     bird = bird_module.Bird(BIRD_START_POSITION)
     base = base_module.Base(BASE_HEIGHT)
-    pipes = [pipe_module.Pipe(PIPE_DISTANCE)]
+    pipes = [pipe_module.Pipe(difficulty_constants.PIPE_DISTANCE)]
     
     window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     clock = pygame.time.Clock()
@@ -45,7 +44,7 @@ def main():
     run = True
     
     while run:
-        clock.tick(TICKS_PER_SECOND)
+        clock.tick(difficulty_constants.TICKS_PER_SECOND)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -64,7 +63,7 @@ def main():
             
         if should_add_pipe:
             score += 1
-            pipes.append(pipe_module.Pipe(PIPE_DISTANCE))
+            pipes.append(pipe_module.Pipe(difficulty_constants.PIPE_DISTANCE))
             should_add_pipe = False
         
         for pipe_to_remove in pipes_to_remove:

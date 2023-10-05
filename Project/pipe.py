@@ -2,12 +2,10 @@ import pygame
 import random
 import os
 import bird as bird_module
+import difficulty_constants
 
 class Pipe:
     PIPE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images", "pipe.png")))
-    
-    SPACE_BETWEEN_PIPES = 200
-    VELOCITY = 5
     
     def __init__(self, x):
         self.x = x
@@ -20,10 +18,10 @@ class Pipe:
         self.height = random.randrange(50, 450)
         
         self.top = self.height - self.pipe_top.get_height()
-        self.bottom = self.height + self.SPACE_BETWEEN_PIPES
+        self.bottom = self.height + difficulty_constants.SPACE_BETWEEN_PIPES
         
     def move(self):
-        self.x -= self.VELOCITY
+        self.x -= difficulty_constants.PIPE_VELOCITY
     
     def draw(self, window):
         window.blit(self.pipe_top, (self.x, self.top))
