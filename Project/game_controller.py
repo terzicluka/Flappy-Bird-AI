@@ -17,7 +17,7 @@ PIPE_VELOCITY = 8
 
 MAX_GENERATIONS = 2000
 
-BACKGROUND_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","background.png")))
+BACKGROUND_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","background.png")))
 WINDOW = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Flappy Bird")
 STATISTICS_FONT = pygame.font.SysFont("arial", 33)

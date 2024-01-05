@@ -1,7 +1,7 @@
 import pygame
 import os
 
-BASE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","base.png")))
+BASE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","base.png")))
 BASE_VELOCITY = 5
 
 class Base:

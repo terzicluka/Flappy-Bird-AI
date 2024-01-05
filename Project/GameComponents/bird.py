@@ -1,9 +1,9 @@
 import pygame
 import os
 
-BIRD_DOWNFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","birdDownFlap.png")))
-BIRD_MIDFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","birdMidFlap.png")))
-BIRD_UPFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","birdUpFlap.png")))
+BIRD_DOWNFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","birdDownFlap.png")))
+BIRD_MIDFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","birdMidFlap.png")))
+BIRD_UPFLAP_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","birdUpFlap.png")))
 IMAGES = [BIRD_DOWNFLAP_IMAGE, BIRD_MIDFLAP_IMAGE, BIRD_UPFLAP_IMAGE]
 
 MAX_ROTATION = 25

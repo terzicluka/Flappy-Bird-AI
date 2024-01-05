@@ -2,7 +2,7 @@ import pygame
 import random
 import os
 
-PIPE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Project/Images","pipe.png")))
+PIPE_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("./Images","pipe.png")))
 
 class Pipe():
 
